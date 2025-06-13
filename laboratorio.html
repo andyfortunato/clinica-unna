@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratório | Clínica Unna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Clínica Unna</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="laboratorio.html" class="active">Laboratório</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="lab-results">
+    <div class="container">
+      <h2>Resultados de Exames</h2>
+      <p>Digite seu CPF ou código de exame para visualizar seus resultados.</p>
+      <form class="search-form">
+        <input type="text" placeholder="Digite seu CPF ou código" required>
+        <button type="submit" class="btn">Buscar</button>
+      </form>
+
+      <div class="results-table">
+        <h3>Últimos Resultados</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Paciente</th>
+              <th>Exame</th>
+              <th>Data</th>
+              <th>Status</th>
+              <th>PDF</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maria Silva</td>
+              <td>Hemograma</td>
+              <td>12/06/2025</td>
+              <td>Disponível</td>
+              <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+              <td>João Santos</td>
+              <td>Raio-X</td>
+              <td>10/06/2025</td>
+              <td>Pendente</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Clínica Unna. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
