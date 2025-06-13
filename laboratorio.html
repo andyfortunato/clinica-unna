@@ -27,7 +27,7 @@
       <h2>Resultados de Exames</h2>
       <p>Digite seu CPF ou código de exame para visualizar seus resultados.</p>
       <form class="search-form">
-        <input type="text" placeholder="Digite seu CPF ou código" required>
+        <input type="text" id="searchInput" placeholder="Digite seu CPF ou código" required>
         <button type="submit" class="btn">Buscar</button>
       </form>
 
@@ -69,5 +69,24 @@
       <p>&copy; 2025 Clínica Unna. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script>
+  const searchInput = document.getElementById('searchInput');
+  const tableBody = document.querySelector('.results-table tbody');
+  const form = document.querySelector('.search-form');
+
+  // Prevent form submit (page reload)
+  form.addEventListener('submit', e => e.preventDefault());
+
+  // Live filter table rows as user types
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    const rows = tableBody.querySelectorAll('tr');
+
+    rows.forEach(row => {
+      const rowText = row.textContent.toLowerCase();
+      row.style.display = rowText.includes(filter) ? '' : 'none';
+    });
+  });
+</script>
 </body>
 </html>
