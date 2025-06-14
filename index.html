@@ -1,98 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clínica Unna</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Top Bar -->
-<div class="top-bar-left">
-  <!-- Dropdown Menu -->
-  <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-      <a href="index.html">Início</a>
-      <a href="about.html">Sobre</a>
-      <a href="contact.html">Contato</a>
-      <a href="laboratorio.html">Laboratório</a>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="#cobre">Cobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#laboratorio">Laboratório</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          📞 <a href="https://wa.me/5511999998888" target="_blank">+55 11 99999-8888</a>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://instagram.com/suaempresa" target="_blank" class="social-icon">
+          <!-- Instagram icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="white" d="M224,202a53,53 0 1 0 53,53A53,53 0 0 0 224,202Zm124-41a26,26 0 1 0 26,26A26,26 0 0 0 348,161ZM398.8,112a93.2,93.2 0 0 0-53.6-53.6C313.2,48,256,48,256,48H192s-57.2,0-89.2,10.4A93.2,93.2 0 0 0,49.2,112C38.8,144,38.8,201.2,38.8,201.2V311s0,57.2,10.4,89.2a93.2,93.2 0 0 0 53.6,53.6C134.8,464,192,464,192,464h64s57.2,0,89.2-10.4a93.2,93.2 0 0 0 53.6-53.6C409.2,368.8,409.2,311,409.2,311V201.2S409.2,144,398.8,112ZM224,338a84,84 0 1 1 84-84A84,84 0 0 1 224,338Zm89.6-148.3a19.2,19.2 0 1 1 19.2-19.2A19.2,19.2 0 0 1 313.6,189.7Z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- Contact Info and Social Icons -->
-  <span class="contact-info">(11) 99999-9999</span>
-  <a href="#" class="social-icon" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
-    <!-- Instagram SVG icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm8.7 3.5a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-  </a>
-  <a href="#" class="social-icon" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
-    <!-- Facebook SVG icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 3h-2.3v7C18.3 21.1 22 17 22 12z"/></svg>
-  </a>
-</div>
-
   <!-- Header -->
-  <header class="container header-centered">
-    <h1>Clínica Unna</h1>
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="index.html">Início</a>
-        <a href="about.html">Sobre</a>
-        <a href="contact.html">Contato</a>
-        <a href="laboratorio.html">Laboratório</a>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Clínica Unna">
       </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <h2>Excelência em Cuidado e Bem‑Estar</h2>
-      <p>Clínica Unna oferece atenção especializada com tecnologia moderna e acolhimento humano.</p>
-      <a href="#" class="btn btn-primary">Agende sua consulta</a>
-    </div>
-  </section>
-
-  <!-- Services Preview -->
-  <section class="services-preview">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Consultas Médicas</h3>
-          <p>Atendimento especializado com médicos experientes.</p>
-        </div>
-        <div class="card">
-          <h3>Exames Laboratoriais</h3>
-          <p>Resultados precisos e rápidos para o seu cuidado.</p>
-        </div>
-        <div class="card">
-          <h3>Pediatria</h3>
-          <p>Cuidado dedicado para os pequenos da família.</p>
-        </div>
-        <div class="card">
-          <h3>Especialidades</h3>
-          <p>Cardiologia, Dermatologia, Endocrinologia e muito mais.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Agende sua Consulta Agora</h2>
-      <a href="#" class="btn btn-secondary">Fale Conosco</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Clínica Unna. Todos os direitos reservados.</p>
-    </div>
-  </footer>
 </body>
 </html>
