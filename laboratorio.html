@@ -7,33 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Top Bar -->
-<div class="top-bar">
-  <div class="container top-bar-container">
-    <div class="top-bar-left">
-      <a href="https://instagram.com/clinicaunna" target="_blank" class="social-icon">📸</a>
-      <a href="https://facebook.com/clinicaunna" target="_blank" class="social-icon">👍</a>
-      <span class="contact-info">📞 (11) 1234-5678</span>
-      <span class="contact-info">📍 Rua Exemplo, 123 - São Paulo, SP</span>
-    </div>
-    <div class="top-bar-right">
-      <a href="patient-login.html" class="top-link">Patient Login</a>
-      <a href="schedule-appointment.html" class="top-link btn-appointment">Schedule Appointment</a>
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <a href="https://instagram.com/clinicaunna" target="_blank" class="social-icon">📸</a>
+        <a href="https://facebook.com/clinicaunna" target="_blank" class="social-icon">👍</a>
+        <span class="contact-info">📞 (11) 1234-5678</span>
+        <span class="contact-info">📍 Rua Exemplo, 123 - São Paulo, SP</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="patient-login.html" class="top-link">Patient Login</a>
+        <a href="schedule-appointment.html" class="top-link btn-appointment">Schedule Appointment</a>
+      </div>
     </div>
   </div>
-</div>
+
   <header>
     <div class="container">
       <h1>Clínica Unna</h1>
-     <nav>
-  <ul>
-    <li><a href="index.html" class="active">Início</a></li>
-    <li><a href="about.html">Sobre</a></li>
-    <li><a href="contact.html">Contato</a></li>
-    <li><a href="laboratorio.html">Laboratório</a></li>
-  </ul>
-</nav>
-
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="laboratorio.html" class="active">Laboratório</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -84,24 +83,23 @@
       <p>&copy; 2025 Clínica Unna. Todos os direitos reservados.</p>
     </div>
   </footer>
+
   <script>
-  const searchInput = document.getElementById('searchInput');
-  const tableBody = document.querySelector('.results-table tbody');
-  const form = document.querySelector('.search-form');
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.querySelector('.results-table tbody');
+    const form = document.querySelector('.search-form');
 
-  // Prevent form submit (page reload)
-  form.addEventListener('submit', e => e.preventDefault());
+    form.addEventListener('submit', e => e.preventDefault());
 
-  // Live filter table rows as user types
-  searchInput.addEventListener('input', () => {
-    const filter = searchInput.value.toLowerCase();
-    const rows = tableBody.querySelectorAll('tr');
+    searchInput.addEventListener('input', () => {
+      const filter = searchInput.value.toLowerCase();
+      const rows = tableBody.querySelectorAll('tr');
 
-    rows.forEach(row => {
-      const rowText = row.textContent.toLowerCase();
-      row.style.display = rowText.includes(filter) ? '' : 'none';
+      rows.forEach(row => {
+        const rowText = row.textContent.toLowerCase();
+        row.style.display = rowText.includes(filter) ? '' : 'none';
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
