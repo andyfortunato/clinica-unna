@@ -284,3 +284,80 @@ footer {
   font-size: 14px;
 }
 
+/* Shared Page Content Styles */
+.page-content {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+/* Headings */
+.page-content h2 {
+  color: #003366;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs & Lists */
+.page-content p, .page-content li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Form Inputs */
+.contact-form,
+.search-form {
+  display: grid;
+  grid-gap: 15px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+.contact-form input,
+.contact-form textarea,
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-form button {
+  width: max-content;
+}
+
+/* Tables */
+.results-table {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+.results-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.results-table th,
+.results-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.results-table th {
+  background-color: #f0f0f0;
+}
+
