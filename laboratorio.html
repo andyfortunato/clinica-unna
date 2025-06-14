@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laboratório | Clínica Unna</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <!-- Top Bar -->
+
+  <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-left">
@@ -47,30 +48,22 @@
     </div>
   </div>
 
-  <header>
-    <div class="container">
-      <h1>Clínica Unna</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="contact.html">Contato</a></li>
-          <li><a href="laboratorio.html" class="active">Laboratório</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header class="container header-centered">
+    <h1>Clínica Unna</h1>
   </header>
 
-  <section class="lab-results">
-    <div class="container">
+  <!-- Main Content (Hero Section style) -->
+  <section class="hero-section">
+    <div class="hero-content container">
       <h2>Resultados de Exames</h2>
       <p>Digite seu CPF ou código de exame para visualizar seus resultados.</p>
       <form class="search-form">
-        <input type="text" id="searchInput" placeholder="Digite seu CPF ou código" required>
-        <button type="submit" class="btn">Buscar</button>
+        <input type="text" id="searchInput" placeholder="Digite seu CPF ou código" required />
+        <button type="submit" class="btn btn-primary">Buscar</button>
       </form>
 
-      <div class="results-table">
+      <div class="results-table" style="margin-top:2rem;">
         <h3>Últimos Resultados</h3>
         <table>
           <thead>
@@ -103,6 +96,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Clínica Unna. Todos os direitos reservados.</p>
