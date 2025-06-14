@@ -39,8 +39,10 @@ body {
   gap: 15px;
 }
 
-.contact-info {
-  margin-left: 15px;
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .social-icon {
@@ -106,7 +108,7 @@ body {
   display: block;
 }
 
-/* Logo & Navigation */
+/* Header */
 .header {
   background-color: white;
   padding: 20px 0;
@@ -139,23 +141,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #007BFF;
-}
-
-/* Hero Section */
-.hero {
-  background: url('hero-image.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
 }
 
 /* Responsive */
